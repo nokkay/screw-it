@@ -1,0 +1,9 @@
+
+	Github: Version Control Ordering
+	-------
+	
+	Personal Branch: Your own branch to merge with the dev branch
+	↓
+	Dev Branch: the experimental branch the personal branch is uploaded to
+	↓
+	Main Branch: the latest stable version
