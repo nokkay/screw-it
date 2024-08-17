@@ -2,7 +2,13 @@
 	
 	// player stats
 	move_spd = 8
-	jump_dist = 24
+	
+	// jumping variables
+	jump_spd = -15
+	jump_hold_frames = 12
+	jump_timer = 0
+	on_ground = false
+	on_platform = false
 	
 	// speeds
 	xspd = 0
