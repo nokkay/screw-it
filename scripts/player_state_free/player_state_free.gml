@@ -19,6 +19,7 @@ function player_state_free()
 
 	// Moving platform collision
 	var _platform = instance_place(x, y + max(1, _final_yspd), obj_platform)
+	var _on_platform = false
 	if (_platform && bbox_bottom <= _platform.bbox_top) 
 	{
 		// Pixel-perfect collisions
@@ -30,6 +31,7 @@ function player_state_free()
 			}
 			_final_yspd = 0
 			yspd = 0 // gravity is reset too
+			_on_platform = true
 		}
 	
 		// Add velocity
@@ -86,6 +88,14 @@ function player_state_free()
 		if (_final_yspd < 0) sprite_index = spr_jump
 		else sprite_index = spr_fall
 	}
+	// landing on platform
+	if (_on_platform)
+	{
+		if (_final_xspd == 0) sprite_index = spr_idle	
+		if (_final_xspd != 0) sprite_index = spr_move	
+	}
+	
+		show_debug_message(bool(_on_platform))
 }
 
 
