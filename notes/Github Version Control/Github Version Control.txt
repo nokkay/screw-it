@@ -8,4 +8,6 @@
 	↓
 	Main Branch: the latest stable version
 	
+	v0.1
+	
 	
