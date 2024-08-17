@@ -20,7 +20,6 @@
 	spr_idle = spr_player_idle
 	spr_fall = spr_player_fall
 	spr_jump = spr_player_jump
-	local_frame = 0
 	
 	// room transitions
 	if (global.target_x != -1)
