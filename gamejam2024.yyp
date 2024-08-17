@@ -49,7 +49,6 @@
     {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
     {"id":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
     {"id":{"name":"MACROS","path":"scripts/MACROS/MACROS.yy",},},
-    {"id":{"name":"player_animate_sprite","path":"scripts/player_animate_sprite/player_animate_sprite.yy",},},
     {"id":{"name":"player_collision","path":"scripts/player_collision/player_collision.yy",},},
     {"id":{"name":"player_state_free","path":"scripts/player_state_free/player_state_free.yy",},},
     {"id":{"name":"player_state_transition","path":"scripts/player_state_transition/player_state_transition.yy",},},
