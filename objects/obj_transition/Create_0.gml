@@ -4,9 +4,6 @@
 	{
 		SLIDE,
 		FADE,
-		PUSH,
-		STAR,
-		WIPE
 	}
 	
 	width = RESOLUTION_W
