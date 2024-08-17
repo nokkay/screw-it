@@ -1,6 +1,6 @@
 /// @description Disable layers
 
-	//layer_set_visible(layer_get_id("Collisions"), false)
+	layer_set_visible(layer_get_id("Collisions"), false)
 	
 	if (global.target_x != -1)
 	{
