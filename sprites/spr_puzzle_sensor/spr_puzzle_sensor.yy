@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_puzzle_sensor",
   "bboxMode":0,
-  "bbox_bottom":3,
+  "bbox_bottom":19,
   "bbox_left":0,
-  "bbox_right":35,
+  "bbox_right":179,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -17,7 +17,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":4,
+  "height":20,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"d57c98a6-4b20-4ba0-a0e3-a72d1a133a85","blendMode":0,"displayName":"default","isLocked":false,"name":"d57c98a6-4b20-4ba0-a0e3-a72d1a133a85","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -90,5 +90,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":36,
+  "width":180,
 }

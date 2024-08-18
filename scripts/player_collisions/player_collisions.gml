@@ -64,14 +64,14 @@ function player_collisions()
 	var _block = instance_place(x, y + max(1, _final_yspd), obj_block)
 	if (_block && bbox_bottom <= _block.bbox_top) 
 	{
-		//var _times_to_try = 15
-		//var _tick = 0
+		var _times_to_try = 30
+		var _tick = 0
 		while (!place_meeting(x, y + sign(_final_yspd), obj_block)) 
 		{
 			y += sign(_final_yspd)
 			
-			//if (_tick < _times_to_try){_tick++; show_debug_message($"tick: {_tick}")}
-			//else break
+			if (_tick < _times_to_try){_tick++; show_debug_message($"tick: {_tick}")}
+			else break
 		}
 	
 		_final_yspd = 0
