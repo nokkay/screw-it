@@ -2,7 +2,7 @@
 	
 
 	
-	if (obj_intro.reached_end)
+	if (local_reached_end)
 	{
 		if (room == rm_intro)room_goto(room_next(room))
 		leading = IN
@@ -17,10 +17,10 @@
 			with (obj_intro)
 			{
 				if (sprite_current < sprite_number - 1) sprite_current++
-				else reached_end = true
+				else {reached_end = true; other.local_reached_end = true}
 				local_frame = 0
 			}
-			if (!obj_intro.reached_end) leading = IN
+			if (!local_reached_end) leading = IN
 		}
 	}
 	// dont play in if we have reached the end
@@ -30,10 +30,6 @@
 		if (percent <= 0) // screen fully revealed
 		{
 			draw_set_alpha(1)
-			
-			// if this is last transition in the intro then destroy the intro object
-			if (percent != 0 && obj_intro.reached_end && room != rm_intro) 
-			{instance_destroy(obj_intro)}
 			instance_destroy()
 		}
 	}

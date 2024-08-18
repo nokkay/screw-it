@@ -5,7 +5,7 @@
 	height_half = (height * 0.5) + 20 // px adds a litle buffer to transition time 
 	percent = 0
 	leading = OUT
-	
+	local_reached_end = false
 	
 	
 	

@@ -2,7 +2,7 @@
 
 	cam = view_camera[0]
 	follow = obj_player
-	look_above = 150
+	look_above = 0 // 150
 	view_width_half = camera_get_view_width(cam) * 0.5
 	view_height_half = camera_get_view_height(cam) * 0.5 + look_above
 
