@@ -10,7 +10,7 @@
 	
 	if (leading == OUT)
 	{
-		percent = min(percent + TRANSITION_SPEED, 1)
+		percent = min(percent + percent_spd, 1)
 		if (percent >= 1) // screen fully obscured
 		{
 			// update variables in obj_intro
@@ -26,7 +26,7 @@
 	// dont play in if we have reached the end
 	else// leading == IN
 	{
-		percent = max(0, percent-TRANSITION_SPEED)
+		percent = max(0, percent-percent_spd)
 		if (percent <= 0) // screen fully revealed
 		{
 			draw_set_alpha(1)
