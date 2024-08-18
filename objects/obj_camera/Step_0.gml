@@ -1,5 +1,7 @@
 /// @description Update Camera
 	
+	
+	
 // update destination
 	if instance_exists(follow)
 	{
