@@ -1,7 +1,7 @@
 /// @description Cause a room transition
 
 
-	if (instance_exists(obj_player)) && (position_meeting(obj_player.x,obj_player.y,id))
+	if (instance_exists(obj_player)) && (place_meeting(x,y,obj_player))
 	{
 			if (!instance_exists(obj_transition))
 			{

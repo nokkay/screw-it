@@ -8,8 +8,8 @@ function get_player_sprite()
 	// on ground
 	if (on_ground)
 	{
-		if (_final_xspd == 0) sprite_index = spr_idle
-		else sprite_index = spr_move
+		if (global.key_right or global.key_left) sprite_index = spr_move
+		else sprite_index = spr_idle
 	}
 	// on platform
 	if (on_platform)
