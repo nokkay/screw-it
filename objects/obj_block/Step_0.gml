@@ -1,14 +1,34 @@
 
-function player_collisions()
-{
-	// horizontal movement
-	xdir = global.key_right - global.key_left
-	xspd = xdir * move_spd
-	
-
 	// Final movement velocity
 	_final_xspd = xspd
 	_final_yspd = yspd
+	
+	
+	with (obj_player) 
+	{
+		// pushing
+		if (bbox_left == other.bbox_right && place_meeting(x + _final_xspd,y,obj_block))
+		{
+			show_debug_message("player pushing box from right")
+			other._final_xspd = _final_xspd 
+		}
+		if (bbox_right == other.bbox_left && place_meeting(x + _final_xspd,y,obj_block)) 
+		{
+			show_debug_message("player pushing box from left")
+			other._final_xspd = _final_xspd 
+		}
+		
+		// disable grabbable if player is on top
+		if (bbox_bottom == other.bbox_top)
+		{
+			show_debug_message("player is on top")
+			other._final_yxspd = 0
+		}
+		
+	}
+	
+	
+	
 
 	// Moving platform collision
 	var _platform = instance_place(x, y + max(1, _final_yspd), obj_platform)
@@ -33,7 +53,7 @@ function player_collisions()
 	else on_platform = false
 
 
-	// x wall/floor collisions
+	// X collisions
 	if (place_meeting(x + _final_xspd, y, obj_collision)) 
 	{
 		while (!place_meeting(x + sign(_final_xspd), y, obj_collision))
@@ -44,7 +64,7 @@ function player_collisions()
 		_final_xspd = 0
 	}
 
-	// y wall/floor collisions
+	// Y collisions
 	if (place_meeting(x, y + _final_yspd, obj_collision))
 	{
 		while (!place_meeting(x, y + sign(_final_yspd), obj_collision)) 
@@ -58,38 +78,6 @@ function player_collisions()
 	}
 	else on_ground = false
 	
-
-	
-	// y blocks collisions
-	var _block = instance_place(x, y + max(1, _final_yspd), obj_block)
-	if (_block && bbox_bottom <= _block.bbox_top) 
-	{
-		//var _times_to_try = 15
-		//var _tick = 0
-		while (!place_meeting(x, y + sign(_final_yspd), obj_block)) 
-		{
-			y += sign(_final_yspd)
-			
-			//if (_tick < _times_to_try){_tick++; show_debug_message($"tick: {_tick}")}
-			//else break
-		}
-	
-		_final_yspd = 0
-		yspd = 0 // gravity is reset too
-		on_ground = true
-	}
-	
-	_block = instance_place(x  + max(1, _final_xspd), y, obj_block)
-	if (_block && bbox_left >= _block.bbox_right &&  bbox_right <= _block.bbox_left) 
-	{
-		while (!place_meeting(x + sign(_final_xspd), y, obj_block))
-		{
-			x += sign(_final_xspd)
-		}
-	
-		_final_xspd = 0
-	}
-	
 	
 	
 	// move
@@ -102,4 +90,4 @@ function player_collisions()
 		yspd += grav_accel;
 	}
 
-}
+

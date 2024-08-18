@@ -1,3 +1,3 @@
 
 	draw_self()
-	//draw_sprite(spr_player_hb,0,x,y)
+	draw_sprite(spr_player_hb,0,x,y)
