@@ -69,7 +69,6 @@
     {"id":{"name":"obj_platform_puzzle","path":"objects/obj_platform_puzzle/obj_platform_puzzle.yy",},},
     {"id":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
-    {"id":{"name":"obj_puzzle_block","path":"objects/obj_puzzle_block/obj_puzzle_block.yy",},},
     {"id":{"name":"obj_puzzle_sensor","path":"objects/obj_puzzle_sensor/obj_puzzle_sensor.yy",},},
     {"id":{"name":"obj_room_exit","path":"objects/obj_room_exit/obj_room_exit.yy",},},
     {"id":{"name":"obj_titlescreen","path":"objects/obj_titlescreen/obj_titlescreen.yy",},},

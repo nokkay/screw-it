@@ -6,7 +6,7 @@
 	else gun_x_draw_offset = - abs(gun_x_draw_offset)
 	
 	Gun.x = x + gun_x_draw_offset
-	Gun.y = y-48
+	Gun.y = y - gun_y_draw_offset
 
 	mask_index = spr_player_hb
 	script_execute(state)
