@@ -11,6 +11,8 @@
 
 	hit_wall = false
 
+	if (sprite != -1 )sprite_index = sprite
+	else sprite_index = spr_puzzle_block
 	
 	
 	

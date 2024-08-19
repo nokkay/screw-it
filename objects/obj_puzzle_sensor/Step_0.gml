@@ -1,8 +1,10 @@
 /// @desc Collide with puzzle block
 
-	if (place_meeting(x,y,obj_puzzle_block))
+	var _block = instance_place(x,y,obj_block)
+	if (_block && _block.puzzle)
 	{
 		image_index = 1	
+		show_debug_message(_block.puzzle)
 		
 		// send activation signal
 		if (activate_id != -1)
