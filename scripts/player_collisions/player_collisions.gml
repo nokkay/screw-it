@@ -7,8 +7,8 @@ function player_collisions()
 	
 	if (noclip) // debugging
 	{
-		x += (global.key_right - global.key_left) * move_spd
-		y += (global.key_down - global.key_up) * move_spd
+		x += (global.key_right - global.key_left) * 20
+		y += (global.key_down - global.key_up) * 20
 		return
 	}
 
