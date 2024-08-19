@@ -52,7 +52,9 @@ if mouse_check_button(mb_right){
 	RotateOffset -= RotateSpeed;
 }
 */
-if mouse_wheel_up(){
+
+// hotkey for resizing incase user is on laptop or has no mouse
+if (mouse_wheel_up() or global.size_up_key){
 	if ObjectGrabbed != noone{
 		if ObjectGrabbed.image_xscale > ScaleMin && ObjectGrabbed.image_yscale > ScaleMin{
 			ObjectGrabbed.image_xscale -= ScaleSpeed;
@@ -60,7 +62,7 @@ if mouse_wheel_up(){
 		}
 	}
 }
-if mouse_wheel_down(){
+if (mouse_wheel_down() or global.size_down_key){
 	if ObjectGrabbed != noone{
 		if ObjectGrabbed.image_xscale < ScaleMax && ObjectGrabbed.image_yscale < ScaleMax {
 			ObjectGrabbed.image_xscale += ScaleSpeed;
