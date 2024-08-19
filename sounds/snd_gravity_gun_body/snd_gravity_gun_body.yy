@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_gravity_gun_body",
+  "audioGroupId":{
+    "name":"AudioGroup_SFX",
+    "path":"audiogroups/AudioGroup_SFX",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.831875,
+  "name":"snd_gravity_gun_body",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_gravity_gun_body.wav",
+  "type":1,
+  "volume":1.0,
+}
