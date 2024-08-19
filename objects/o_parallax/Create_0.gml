@@ -13,7 +13,7 @@ switch(room){//what profile does this room have
 		LevelProfileArray[2] = 1;
 		LevelProfileArray[3] = 1;
 	break;
-	case rm_game:
+	case rm_level1:
 	Layers = 4;
 	LevelProfileArray = array_create(Layers,-1);
 		LevelProfileArray[0] = 1;
@@ -21,7 +21,23 @@ switch(room){//what profile does this room have
 		LevelProfileArray[2] = 1;
 		LevelProfileArray[3] = 1;
 	break;
-	case rm_game_1:
+	case rm_level2:
+	Layers = 4;
+	LevelProfileArray = array_create(Layers,-1);
+		LevelProfileArray[0] = 1;
+		LevelProfileArray[1] = 1;
+		LevelProfileArray[2] = 1;
+		LevelProfileArray[3] = 1;
+	break;
+	case rm_level3:
+	Layers = 4;
+	LevelProfileArray = array_create(Layers,-1);
+		LevelProfileArray[0] = 1;
+		LevelProfileArray[1] = 1;
+		LevelProfileArray[2] = 1;
+		LevelProfileArray[3] = 1;
+	break;
+	case rm_level4:
 	Layers = 4;
 	LevelProfileArray = array_create(Layers,-1);
 		LevelProfileArray[0] = 1;
