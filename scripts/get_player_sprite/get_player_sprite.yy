@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"get_player_sprite",
   "isCompatibility":false,
   "isDnD":false,

@@ -21,6 +21,9 @@
 	// state
 	state = player_state_free
 
+	// debug
+	noclip = false
+	
 	// sprites
 	spr_move = spr_player_move
 	spr_idle = spr_player_idle

@@ -5,6 +5,18 @@ function player_collisions()
 	xdir = global.key_right - global.key_left
 	xspd = xdir * move_spd
 	
+	if (noclip) // debugging
+	{
+		xspd = (global.key_right - global.key_left) * move_spd
+		yspd = (global.key_down - global.key_up) * move_spd
+		
+		x += xspd
+		y += yspd
+		
+		show_debug_message($"xspd:{xspd}")
+		show_debug_message($"yspd:{yspd}")
+		return
+	}
 
 	// Final movement velocity
 	_final_xspd = xspd
