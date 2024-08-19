@@ -1,6 +1,6 @@
 /// @desc Collide with puzzle block
 
-	var _block = instance_place(x,y,obj_block)
+	var _block = instance_place(x,y,o_box)
 	if (_block && _block.puzzle)
 	{
 		image_index = 1	
