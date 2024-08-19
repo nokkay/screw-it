@@ -1,5 +1,4 @@
 ///@desc 
-	
 	// player stats
 	move_spd = 8
 	
@@ -9,6 +8,7 @@
 	jump_timer = 0
 	on_ground = false
 	on_platform = false
+	on_box = false
 	
 	// speeds
 	xspd = 0
@@ -21,6 +21,9 @@
 	// state
 	state = player_state_free
 
+	// debug
+	noclip = false
+	
 	// sprites
 	spr_move = spr_player_move
 	spr_idle = spr_player_idle
@@ -34,7 +37,12 @@
 		y = global.target_y
 		image_xscale = global.target_dir
 	}
-
+	
+	//child gun
+	if (instance_exists(o_gun)) instance_destroy(o_gun) // make sure we dont have duplicates
+	Gun = instance_create_depth(x,y,depth-10,o_gun) // create gun
+	
+	gun_x_draw_offset = 36
 
 	
 	

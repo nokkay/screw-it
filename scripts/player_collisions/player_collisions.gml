@@ -5,6 +5,12 @@ function player_collisions()
 	xdir = global.key_right - global.key_left
 	xspd = xdir * move_spd
 	
+	if (noclip) // debugging
+	{
+		x += (global.key_right - global.key_left) * 20
+		y += (global.key_down - global.key_up) * 20
+		return
+	}
 
 	// Final movement velocity
 	_final_xspd = xspd
@@ -32,8 +38,8 @@ function player_collisions()
 	}
 	else on_platform = false
 
-	/// collisions
-	// X
+
+	// x wall/floor collisions
 	if (place_meeting(x + _final_xspd, y, obj_collision)) 
 	{
 		while (!place_meeting(x + sign(_final_xspd), y, obj_collision))
@@ -44,7 +50,7 @@ function player_collisions()
 		_final_xspd = 0
 	}
 
-	// Y
+	// y wall/floor collisions
 	if (place_meeting(x, y + _final_yspd, obj_collision))
 	{
 		while (!place_meeting(x, y + sign(_final_yspd), obj_collision)) 
@@ -57,6 +63,37 @@ function player_collisions()
 		on_ground = true
 	}
 	else on_ground = false
+	
+	
+	
+	
+	// x box collisions
+	if (place_meeting(x + _final_xspd, y, o_box)) 
+	{
+		while (!place_meeting(x + sign(_final_xspd), y, o_box))
+		{
+			x += sign(_final_xspd)
+		}
+	
+		_final_xspd = 0
+	}
+
+	// y box collisions
+	var _box_y = instance_place(x, y + _final_yspd, o_box)
+	// make sure box exists, is not grabbed, and ignore colliisions if the player is trapped under it
+	if (_box_y && !_box_y.GrabbedBool && (bbox_bottom < _box_y.bbox_top + 1))
+	{
+		while (!place_meeting(x, y + sign(_final_yspd), o_box)) 
+		{
+			y += sign(_final_yspd)
+		}
+	
+		_final_yspd = 0
+		yspd = 0 // gravity is reset too
+		on_box = true
+	}
+	else on_box = false
+	
 	
 	// move
 	x += _final_xspd
