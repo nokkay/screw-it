@@ -1,24 +1,18 @@
-
-
-	var _target_x = end_x, _target_y = end_y
+/// @desc set target and movement
 	
-	// target
-	if (going_to_start)
+	// if activated then target point is end point
+	if (activated)
+	{
+		_target_x = end_x
+		_target_y = end_y
+	}
+	else // then target is starting point
 	{
 		_target_x = start_x
 		_target_y = start_y
 	}
 	
 	// set movement
-	if (activated)
-	{
-		image_blend = c_lime
-		xspd = sign(_target_x - x) * current_spd
-		yspd = sign(_target_y - y) * current_spd
-	}
-	else
-	{
-		image_blend = c_white
-		xspd = 0
-		yspd = 0
-	}
+	xspd = sign(_target_x - x) * current_spd
+	yspd = sign(_target_y - y) * current_spd
+	
