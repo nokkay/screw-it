@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"player_state_free",
   "isCompatibility":false,
   "isDnD":false,
