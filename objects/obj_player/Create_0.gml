@@ -1,5 +1,4 @@
 ///@desc 
-	
 	// player stats
 	move_spd = 8
 	
@@ -34,7 +33,8 @@
 		y = global.target_y
 		image_xscale = global.target_dir
 	}
-
+	//child gun
+	Gun = instance_create_depth(x,y,depth-10,o_gun);
 
 	
 	

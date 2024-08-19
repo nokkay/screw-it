@@ -1,17 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_player",
+  "%Name":"o_parallax",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_player",
+  "name":"o_parallax",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"code art",
+    "path":"folders/Objects/code art.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,13 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_player_fall",
-    "path":"sprites/spr_player_fall/spr_player_fall.yy",
-  },
-  "spriteMaskId":{
-    "name":"spr_player_hb",
-    "path":"sprites/spr_player_hb/spr_player_hb.yy",
-  },
+  "spriteId":null,
+  "spriteMaskId":null,
   "visible":true,
 }
