@@ -8,6 +8,7 @@
 	jump_timer = 0
 	on_ground = false
 	on_platform = false
+	on_box = false
 	
 	// speeds
 	xspd = 0

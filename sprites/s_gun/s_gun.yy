@@ -3,7 +3,7 @@
   "%Name":"s_gun",
   "bboxMode":0,
   "bbox_bottom":95,
-  "bbox_left":26,
+  "bbox_left":32,
   "bbox_right":127,
   "bbox_top":32,
   "collisionKind":1,
@@ -19,7 +19,8 @@
   "height":128,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"74aae6de-4ad5-4cae-910a-91ec40cedd27","blendMode":0,"displayName":"default","isLocked":false,"name":"74aae6de-4ad5-4cae-910a-91ec40cedd27","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"4bbd0cad-5f29-475f-95d5-5f65e1a5a735","blendMode":0,"displayName":"default (2)","isLocked":false,"name":"4bbd0cad-5f29-475f-95d5-5f65e1a5a735","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"74aae6de-4ad5-4cae-910a-91ec40cedd27","blendMode":0,"displayName":"default","isLocked":false,"name":"74aae6de-4ad5-4cae-910a-91ec40cedd27","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
   ],
   "name":"s_gun",
   "nineSlice":null,

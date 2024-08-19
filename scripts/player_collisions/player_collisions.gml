@@ -64,39 +64,73 @@ function player_collisions()
 	}
 	else on_ground = false
 	
-
 	
-	// y blocks collisions
-	var _block = instance_place(x, y + max(1, _final_yspd), obj_block)
-	if (_block && bbox_bottom <= _block.bbox_top) 
+	
+	
+	// x box collisions
+	if (place_meeting(x + _final_xspd, y, o_box)) 
 	{
-		var _times_to_try = 30
-		var _tick = 0
-		while (!place_meeting(x, y + sign(_final_yspd), obj_block)) 
-		{
-			y += sign(_final_yspd)
-			
-			if (_tick < _times_to_try){_tick++; show_debug_message($"tick: {_tick}")}
-			else break
-		}
-	
-		_final_yspd = 0
-		yspd = 0 // gravity is reset too
-		on_ground = true
-	}
-	
-	_block = instance_place(x  + max(1, _final_xspd), y, obj_block)
-	if (_block && bbox_left >= _block.bbox_right &&  bbox_right <= _block.bbox_left) 
-	{
-		while (!place_meeting(x + sign(_final_xspd), y, obj_block))
+		while (!place_meeting(x + sign(_final_xspd), y, o_box))
 		{
 			x += sign(_final_xspd)
 		}
 	
 		_final_xspd = 0
 	}
+
+	// y box collisions
+	if (place_meeting(x, y + _final_yspd, o_box))
+	{
+		while (!place_meeting(x, y + sign(_final_yspd), o_box)) 
+		{
+			y += sign(_final_yspd)
+		}
 	
+		_final_yspd = 0
+		yspd = 0 // gravity is reset too
+		on_box = true
+	}
+	else on_box = false
 	
+
+	
+	//// y blocks collisions
+	//var _block_y = instance_place(x, y + max(1, _final_yspd), o_box)
+	//if (_block_y && bbox_bottom <= _block_y.bbox_top) 
+	//{
+	//	var _times_to_try = 30
+	//	var _tick = 0
+	//	while (!place_meeting(x, y + sign(_final_yspd), o_box)) 
+	//	{
+	//		y += sign(_final_yspd)
+			
+	//		if (_tick < _times_to_try){_tick++}// show_debug_message($"tick: {_tick}")}
+	//		else break
+	//	}
+	
+	//	_final_yspd = 0
+	//	yspd = 0 // gravity is reset too
+	//	on_ground = true
+	//}
+	
+	//// x block collisions
+	//var _block_x = instance_place(x + _final_xspd, y, o_box);
+
+	//if (_block_x != noone) 
+	//{
+	//    // Check if the player is about to collide with the box
+	//    if (bbox_left < _block_x.bbox_right && bbox_right > _block_x.bbox_left) 
+	//	{
+	//        // Move the player pixel by pixel until a collision occurs
+	//        while (!place_meeting(x + sign(_final_xspd), y, o_box)) 
+	//		{
+	//            x += sign(_final_xspd)
+	//        }
+
+	//        // Stop horizontal movement after collision
+	//        _final_xspd = 0;
+	//    }
+	//}
 	
 	// move
 	x += _final_xspd
