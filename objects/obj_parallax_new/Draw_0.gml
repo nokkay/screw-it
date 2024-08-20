@@ -4,6 +4,6 @@
 	
 	// higher the parallax the further away
 
-	draw_sprite_tiled(spr_bg_machine, 2, _cam_x * 2, _cam_y)
-	draw_sprite_tiled(spr_bg_machine, 1, _cam_x * .2, _cam_y)
-	draw_sprite_tiled(spr_bg_machine, 0, _cam_x * 1, _cam_y)
+	draw_sprite_tiled(spr_bg_machine, 2, _cam_x * 1, _cam_y)
+	draw_sprite_tiled(spr_bg_machine, 1, _cam_x * .85, _cam_y)
+	draw_sprite_tiled(spr_bg_machine, 0, _cam_x * .75, _cam_y)
