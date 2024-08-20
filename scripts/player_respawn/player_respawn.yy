@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"set_text_settings",
+  "%Name":"player_respawn",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"set_text_settings",
+  "name":"player_respawn",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",
