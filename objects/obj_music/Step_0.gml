@@ -17,3 +17,10 @@
 		}
 		audio_play_sound(new_sound, 1, true);
 	}
+	
+	if (room != rm_title && room != rm_intro)
+	{
+		play_sound(snd_mechanical_ambience,-1,false)	
+	}
+	
+	

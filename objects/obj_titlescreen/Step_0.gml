@@ -13,6 +13,7 @@
 	// start game on any key press
 	if (key_pressed && (!loading_started))
 	{
+		play_sound(snd_UI_start_game,-1,false)
 		room_transition(TRANS_TYPE.FADE, room_next(room))
 		loading_started = true
 	}

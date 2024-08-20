@@ -32,5 +32,5 @@
     "path":"sprites/spr_spawnpoint/spr_spawnpoint.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
