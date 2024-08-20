@@ -25,8 +25,9 @@
 	
 	if (room == rm_victory)
 	{
-		audio_stop_all()
-		play_sound(snd_victory,-1,false)
+		audio_stop_sound(snd_mechanical_ambience)
+		audio_stop_sound(snd_level_song)
+		audio_stop_sound(snd_level_song_reduced)
 	}
 	
 	
