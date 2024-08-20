@@ -11,7 +11,7 @@
 				global.target_dir = obj_player.image_xscale
 				
 				// activate sound 
-				if (activate_sound != -1) play_sound_struct({sound:activate_sound,pitch:1},true,.1,false)
+				if (activate_sound != -1) play_sound(activate_sound,-1,false)
 			
 				// room transition 
 				with (obj_player) state = player_state_transition 

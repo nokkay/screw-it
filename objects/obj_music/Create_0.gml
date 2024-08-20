@@ -1,3 +1,6 @@
-///@ desc Plays music
 
-	//audio_play_sound_ext({sound:snd_evil_mossball,pitch:1,loop:true})
+	// play these songs in menu and intro
+	current_sound = snd_level_song
+	play_sound(current_sound,-1,false)
+	song_timestamp = 0
+	song_start_time = current_time;

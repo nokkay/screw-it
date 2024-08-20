@@ -12,8 +12,8 @@
   "duration":25.70449,
   "name":"snd_evil_mossball",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Music",
+    "path":"folders/Sounds/Music.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

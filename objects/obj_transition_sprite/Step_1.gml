@@ -4,7 +4,7 @@
 	
 	if (local_reached_end)
 	{
-		if (room == rm_intro)room_goto(room_next(room))
+		if (room == rm_intro) room_goto(room_next(room))
 		leading = IN
 	}
 	
