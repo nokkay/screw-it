@@ -1,4 +1,5 @@
 ///@desc 
+	
 	// player stats
 	move_spd = 8
 	
