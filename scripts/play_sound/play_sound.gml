@@ -3,7 +3,6 @@
 ///@arg _pitch_change amount to randomize pitch, put -1 if none
 ///@arg _overlap_allowed
 
-
 function play_sound(_sound, _pitch_change, _overlap_allowed)
 {
 	// check if sound is playing already 
