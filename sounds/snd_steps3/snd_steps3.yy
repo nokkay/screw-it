@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_step3",
+  "%Name":"snd_steps3",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.692312,
-  "name":"snd_step3",
+  "duration":0.144,
+  "name":"snd_steps3",
   "parent":{
     "name":"Steps",
     "path":"folders/Sounds/SFX/Steps.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_step3.wav",
+  "soundFile":"snd_steps3.mp3",
   "type":0,
   "volume":1.0,
 }

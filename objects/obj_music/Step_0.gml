@@ -1,6 +1,6 @@
 
 	song_timestamp = current_time - song_start_time; // Calculate elapsed time
-    show_debug_message("Elapsed Time: " + string(song_timestamp));
+   // show_debug_message("Elapsed Time: " + string(song_timestamp));
 	
 	if (room != rm_title && room != rm_intro && !audio_is_playing(snd_level_song_reduced))
 	{

@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.692312,
+  "duration":0.144,
   "name":"snd_steps4",
   "parent":{
     "name":"Steps",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_steps4.wav",
+  "soundFile":"snd_steps4.mp3",
   "type":0,
   "volume":1.0,
 }
