@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"set_text_settings",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"player_respawn",
   "isCompatibility":false,
   "isDnD":false,
