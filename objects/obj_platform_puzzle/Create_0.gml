@@ -1,7 +1,7 @@
 
 	event_inherited()
 
-	current_spd = platform_spd // defined in variable definition
+	current_spd = puzzle_platform_spd // defined in variable definition
 	xspd = 0
 	yspd = 0
 	
