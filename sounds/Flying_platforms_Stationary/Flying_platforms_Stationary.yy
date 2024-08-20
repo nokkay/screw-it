@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"Flying_platforms_Stationary",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":7.384625,
+  "name":"Flying_platforms_Stationary",
+  "parent":{
+    "name":"MovingPlatforms",
+    "path":"folders/Sounds/SFX/MovingPlatforms.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Flying_platforms_Stationary.wav",
+  "type":0,
+  "volume":1.0,
+}

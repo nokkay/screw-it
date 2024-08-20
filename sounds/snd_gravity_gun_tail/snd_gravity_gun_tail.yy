@@ -12,8 +12,8 @@
   "duration":0.370188,
   "name":"snd_gravity_gun_tail",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"SFX",
+    "path":"folders/Sounds/SFX.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

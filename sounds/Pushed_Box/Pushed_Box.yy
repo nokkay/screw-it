@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"Pushed_Box",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.384625,
+  "name":"Pushed_Box",
+  "parent":{
+    "name":"Box",
+    "path":"folders/Sounds/SFX/Box.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Pushed_Box.wav",
+  "type":0,
+  "volume":1.0,
+}

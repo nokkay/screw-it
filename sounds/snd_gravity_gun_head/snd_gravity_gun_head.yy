@@ -12,8 +12,8 @@
   "duration":0.461542,
   "name":"snd_gravity_gun_head",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"SFX",
+    "path":"folders/Sounds/SFX.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
