@@ -23,8 +23,16 @@ if mouse_check_button(mb_left){
 			i++
 		} until (ObjectGrabbed != noone || (i >= GunRange));// || (x+i*lengthdir_x(CheckLength,direction) > mouse_x && y+i*lengthdir_y(CheckLength,direction) > mouse_y ))
 	} else {
-		ObjectGrabbed.x += clamp(lerp(ObjectGrabbed.x,mouse_x,.125)-ObjectGrabbed.x,-16,16);
-		ObjectGrabbed.y += clamp(lerp(ObjectGrabbed.y,mouse_y,.125)-ObjectGrabbed.y,-16,16);
+		//ObjectGrabbed.x += clamp(lerp(ObjectGrabbed.x,mouse_x,.125)-ObjectGrabbed.x,-16,16);
+		//ObjectGrabbed.y += clamp(lerp(ObjectGrabbed.y,mouse_y,.125)-ObjectGrabbed.y,-16,16);
+		var XX = clamp(lerp(ObjectGrabbed.x,mouse_x,.125)-ObjectGrabbed.x,-16,16);
+		var YY = clamp(lerp(ObjectGrabbed.y,mouse_y,.125)-ObjectGrabbed.y,-16,16);
+		if abs(lengthdir_x(x-(ObjectGrabbed.x + XX),direction)) <= GunRange*CheckLength{
+			ObjectGrabbed.x += XX;
+		}
+		if abs(lengthdir_y(y-(ObjectGrabbed.y + YY),direction)) <= GunRange*CheckLength{
+			ObjectGrabbed.y += YY;
+		}
 		ObjectGrabbed.direction = RotateOffset;
 		ObjectGrabbed.image_angle = ObjectGrabbed.direction;
 		ObjectGrabbed.XVelocity = 0;

@@ -12,7 +12,7 @@ if other.PhysicsFlag = true{
 	//show_debug_message("dist "+string(CollisionCenterDistance));
 	//show_debug_message("dir "+string(CollisionDirection));
 	if lengthdir_x(CollisionDepth/2,CollisionDirection) = 0 && lengthdir_y(CollisionDepth/2,CollisionDirection) = 0{
-		//CollisionDepth += irandom_range(-30,30);//unsticking at random if required
+		CollisionDepth += irandom_range(-30,30);//unsticking at random if required
 		XVelocity += lengthdir_x(CollisionDepth+(sign(CollisionDepth)*32),CollisionDirection)
 		YVelocity += lengthdir_y(CollisionDepth+(sign(CollisionDepth)*32),CollisionDirection)
 		//show_debug_message("in "+string(id));
@@ -46,17 +46,3 @@ if other.PhysicsFlag = true{
 	}
 }
 color = c_red;
-
-/*
-if other.x > x{
-	XVelocity--;	
-}
-if other.x < x{
-	XVelocity++;	
-}
-if other.y > y{
-	YVelocity--;	
-}
-if other.y < y{
-	YVelocity++;	
-}
