@@ -1,7 +1,7 @@
 #macro FRAME_RATE 60
 #macro TILE_SIZE 64
 
-#macro ROOM_START rm_level4 //room_next(rm_intro) //rm_title 
+#macro ROOM_START rm_title //rm_level4 //room_next(rm_intro) //rm_title 
 
 #macro RESOLUTION_W 1920
 #macro RESOLUTION_H 1080
