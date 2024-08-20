@@ -15,7 +15,6 @@
 				y += sign(YVelocity)
 			}
 			YVelocity = 0
-			yspd = 0 // gravity is reset too
 			on_platform = true
 		}
 	
