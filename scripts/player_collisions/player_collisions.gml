@@ -65,36 +65,10 @@ function player_collisions()
 	else on_ground = false
 	
 	
-	
-	
-	// x box collisions
-	if (place_meeting(x + _final_xspd, y, o_box)) 
-	{
-		while (!place_meeting(x + sign(_final_xspd), y, o_box))
-		{
-			x += sign(_final_xspd)
-		}
-	
-		_final_xspd = 0
-	}
+	// box collisions
+	player_box_collisions()
 
-	// y box collisions
-	var _box_y = instance_place(x, y + _final_yspd, o_box)
-	// make sure box exists, is not grabbed, and ignore colliisions if the player is trapped under it
-	if (_box_y && !_box_y.GrabbedBool && (bbox_bottom < _box_y.bbox_top + 1))
-	{
-		while (!place_meeting(x, y + sign(_final_yspd), o_box)) 
-		{
-			y += sign(_final_yspd)
-		}
-	
-		_final_yspd = 0
-		yspd = 0 // gravity is reset too
-		on_box = true
-	}
-	else on_box = false
-	
-	
+
 	// move
 	x += _final_xspd
 	y += _final_yspd

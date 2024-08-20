@@ -27,7 +27,6 @@
     {"name":"inst_25DD1A00","path":"rooms/rm_title/rm_title.yy",},
     {"name":"inst_3BA7EEEA_1","path":"rooms/rm_title/rm_title.yy",},
     {"name":"inst_568EF1DB_1","path":"rooms/rm_title/rm_title.yy",},
-    {"name":"inst_1B977B23","path":"rooms/rm_title/rm_title.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -67,7 +66,6 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_platform_point","path":"objects/obj_platform_point/obj_platform_point.yy",},"propertyId":{"name":"platform_id","path":"objects/obj_platform_point/obj_platform_point.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"platform5",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1824.0,"y":992.0,},
         {"$GMRInstance":"v1","%Name":"inst_25DD1A00","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_25DD1A00","objectId":{"name":"obj_titlescreen","path":"objects/obj_titlescreen/obj_titlescreen.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":5.0,"scaleY":5.0,"x":1504.0,"y":1056.0,},
-        {"$GMRInstance":"v1","%Name":"inst_1B977B23","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1B977B23","objectId":{"name":"o_parallax","path":"objects/o_parallax/o_parallax.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":1312.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRLayer":"","%Name":"Environment","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[
         {"$GMRAssetLayer":"","%Name":"floor_ceiling","assets":[

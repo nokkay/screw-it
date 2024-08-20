@@ -19,4 +19,4 @@
 	}
 
 	// if activation change has changed at the end points, then set spd and move again
-	if (last_activated != activated) current_spd = platform_spd
+	if (last_activated != activated) current_spd = puzzle_platform_spd
