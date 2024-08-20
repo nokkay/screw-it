@@ -84,6 +84,7 @@
     {"id":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
     {"id":{"name":"get_player_sprite","path":"scripts/get_player_sprite/get_player_sprite.yy",},},
     {"id":{"name":"MACROS","path":"scripts/MACROS/MACROS.yy",},},
+    {"id":{"name":"player_box_collisions","path":"scripts/player_box_collisions/player_box_collisions.yy",},},
     {"id":{"name":"player_collisions","path":"scripts/player_collisions/player_collisions.yy",},},
     {"id":{"name":"player_jump","path":"scripts/player_jump/player_jump.yy",},},
     {"id":{"name":"player_state_free","path":"scripts/player_state_free/player_state_free.yy",},},

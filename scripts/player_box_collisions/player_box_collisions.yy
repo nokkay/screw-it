@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"set_text_settings",
+  "%Name":"player_box_collisions",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"set_text_settings",
+  "name":"player_box_collisions",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

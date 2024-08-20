@@ -1,4 +1,6 @@
 
+	event_inherited()
+
 	current_spd = platform_spd // defined in variable definition
 	xspd = 0
 	yspd = 0
