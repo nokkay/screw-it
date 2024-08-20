@@ -23,4 +23,10 @@
 		play_sound(snd_mechanical_ambience,-1,false)	
 	}
 	
+	if (room == rm_victory)
+	{
+		audio_stop_all()
+		play_sound(snd_victory,-1,false)
+	}
+	
 	

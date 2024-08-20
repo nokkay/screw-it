@@ -33,7 +33,7 @@
         "TRANS_TYPE.FADE",
         "TRANS_TYPE.SLIDE",
       ],"multiselect":false,"name":"transition_type","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"TRANS_TYPE.FADE","varType":6,},
-    {"$GMObjectProperty":"v1","%Name":"activate_sound","filters":[],"listItems":[],"multiselect":false,"name":"activate_sound","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-1","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"activate_sound","filters":[],"listItems":[],"multiselect":false,"name":"activate_sound","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"snd_pushed_box","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
