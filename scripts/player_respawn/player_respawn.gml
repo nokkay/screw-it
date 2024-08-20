@@ -7,11 +7,13 @@ function player_respawn()
 	// check spawnpoint exists
 	if (instance_exists(obj_spawnpoint)) 
 	{
-		// room transition 
-		var _transition = instance_create_depth(0,0,-9999,obj_transition) 
-		// when screen is completely black, spawn player
-		if (!instance_exists(obj_player) && _transition.percent >= 1) instance_create_layer(obj_spawnpoint.x,obj_spawnpoint.y,"Instance",obj_player)
-		
+		// create room transition only if none exist
+		room_transition(TRANS_TYPE.FADE,room)
+		// when screen is completely black
+		if (!instance_exists(obj_player) && obj_transition.percent >= 1)
+		{	// spawn player
+			instance_create_layer(obj_spawnpoint.x,obj_spawnpoint.y,"Instance",obj_player)	
+		}
 	}
 	else // no spawnpoint
 	{

@@ -26,6 +26,7 @@
     {"name":"inst_16C9A918","path":"rooms/rm_level3/rm_level3.yy",},
     {"name":"inst_3314ABDF","path":"rooms/rm_level3/rm_level3.yy",},
     {"name":"inst_75F43F82","path":"rooms/rm_level3/rm_level3.yy",},
+    {"name":"inst_D93D720","path":"rooms/rm_level3/rm_level3.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -72,6 +73,7 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_platform_puzzle","path":"objects/obj_platform_puzzle/obj_platform_puzzle.yy",},"propertyId":{"name":"puzzle_platform_spd","path":"objects/obj_platform_puzzle/obj_platform_puzzle.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"10",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2080.0,"y":2176.0,},
         {"$GMRInstance":"","%Name":"inst_75F43F82","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_75F43F82","objectId":{"name":"obj_spawnpoint","path":"objects/obj_spawnpoint/obj_spawnpoint.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":1408.0,},
+        {"$GMRInstance":"","%Name":"inst_D93D720","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_D93D720","objectId":{"name":"obj_killbox","path":"objects/obj_killbox/obj_killbox.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":68.0,"scaleY":5.5,"x":0.0,"y":1984.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRLayer":"","%Name":"Environment","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[
         {"$GMRAssetLayer":"","%Name":"floor_ceiling","assets":[
