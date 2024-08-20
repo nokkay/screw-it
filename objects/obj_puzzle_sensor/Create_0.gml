@@ -1,0 +1,1 @@
+last_index = image_index
