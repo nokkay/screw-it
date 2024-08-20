@@ -40,7 +40,7 @@
 	
 	//child gun
 	if (instance_exists(o_gun)) instance_destroy(o_gun) // make sure we dont have duplicates
-	Gun = instance_create_depth(x,y,depth-10,o_gun) // create gun
+	Gun = instance_create_depth(x,y,depth-1,o_gun) // create gun
 	
 	gun_x_draw_offset = 48
 	gun_y_draw_offset = 64

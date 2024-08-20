@@ -7,3 +7,4 @@
 	global.key_jump = keyboard_check_pressed(vk_space)
 	global.size_up_key = keyboard_check_pressed(ord("O"))
 	global.size_down_key = keyboard_check_pressed(ord("P"))
+

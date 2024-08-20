@@ -11,3 +11,4 @@ LastspotX = mouse_x;//for flicking velocity
 LastspotY = mouse_y;//for flicking velocity
 	
 audio_group_load(AudioGroup_SFX);
+

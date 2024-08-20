@@ -18,7 +18,7 @@
 	global.iUI = instance_create_layer(0,0,layer,obj_UI)
 	global.iMusic = instance_create_layer(0,0,layer,obj_music)
 	global.iInputs = instance_create_layer(0,0,layer,obj_inputs)
-	global.physics_barrier_spawner = instance_create_layer(0,0,layer,o_physicsbarrierspawner)
+	global.iPhysics_spawner = instance_create_layer(0,0,layer,o_physicsbarrierspawner)
 	
 	// resize screen correct resolution
 	surface_resize(application_surface, RESOLUTION_W, RESOLUTION_H)
