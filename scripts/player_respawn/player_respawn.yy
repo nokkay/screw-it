@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"player_respawn",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"player_respawn",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

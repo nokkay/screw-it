@@ -45,7 +45,7 @@ if other.PhysicsFlag = true{
 		y -= lengthdir_y(CollisionDepth/2,CollisionDirection);
 	}
 }
-color = c_red;
+//color = c_red;
 
 /*
 if other.x > x{

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"scr_bglayerprofile",
   "isCompatibility":false,
   "isDnD":false,

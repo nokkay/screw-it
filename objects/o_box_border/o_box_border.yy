@@ -35,5 +35,5 @@
     "path":"sprites/spr_invis_grid_mask/spr_invis_grid_mask.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

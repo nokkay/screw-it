@@ -23,7 +23,7 @@
   ],
   "name":"spr_AAA",
   "nineSlice":null,
-  "origin":0,
+  "origin":6,
   "parent":{
     "name":"circuits",
     "path":"folders/Sprites/environment/circuits.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":0,
-    "yorigin":0,
+    "yorigin":219,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

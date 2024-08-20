@@ -1,4 +1,5 @@
 ///@desc 
+	
 	// player stats
 	move_spd = 8
 	
@@ -29,6 +30,9 @@
 	spr_idle = spr_player_idle
 	spr_fall = spr_player_fall
 	spr_jump = spr_player_jump
+	last_sprite = spr_player_fall
+	
+	step_time = 24
 	
 	// room transitions
 	if (global.target_x != -1)
@@ -42,7 +46,10 @@
 	if (instance_exists(o_gun)) instance_destroy(o_gun) // make sure we dont have duplicates
 	Gun = instance_create_depth(x,y,depth-1,o_gun) // create gun
 	
-	gun_x_draw_offset = 36
-
+	gun_x_draw_offset = 48
+	gun_y_draw_offset = 64
+	
+	// sounds
+	sound_played = false
 	
 	
